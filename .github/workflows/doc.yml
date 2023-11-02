@@ -12,20 +12,20 @@ jobs:
       - name: copy assets
         run: echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S cp assets -Rv /var/www/html
       - name: copy blog
-        run: cp -Rv blog /home/student/docu
+        run: echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S cp -Rv blog /var/www/html
       - name: copy docs
-        run: cp -Rv docs /home/student/docu
+        run: echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S cp -Rv docs /var/www/html
       - name: copy img
-        run: cp -Rv img /home/student/docu
+        run: echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S cp -Rv img /var/www/html
       - name: copy markdown
-        run: cp -Rv markdown-page /home/student/docu
+        run: echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S cp -Rv markdown-page /var/www/html
       - name: copy 404
-        run: cp 404.html /home/student/docu
+        run: echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S cp 404.html /var/www/html
       - name: copy README
-        run: cp README.md /home/student/docu
+        run: echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S cp README.md /var/www/html
       - name: copy index
-        run: cp index.html /home/student/docu
+        run: echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S cp index.html /var/www/html
       - name: copy sitemap
-        run: cp sitemap.xml /home/student/doc
+        run: echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S cp sitemap.xml /var/www/html
       - name: affiche reussi
         run: echo "reussis !"
