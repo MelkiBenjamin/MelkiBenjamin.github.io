@@ -5,5 +5,25 @@ jobs:
     # The type of runner that the job will run on
     runs-on: self-hosted
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Say Hello World
         run: echo Hello, world!
+      - name: copy 
+        run: cp assets /home/student/docu
+      - name: copy 
+        run: cp blog /home/student/docu
+      - name: copy 
+        run: cp docs /home/student/docu
+      - name: copy 
+        run: cp img /home/student/docu
+      - name: copy 
+        run: cp markdown-page /home/student/docu
+      - name: copy 
+        run: cp 404.html /home/student/docu
+      - name: copy 
+        run: cp README.md /home/student/docu
+      - name: copy 
+        run: cp index.html /home/student/docu
+      - name: copy 
+        run: cp sitemaps.xml /home/student/docu
