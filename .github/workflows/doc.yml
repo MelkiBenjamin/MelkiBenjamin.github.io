@@ -14,11 +14,11 @@ jobs:
       - name: copy blog
         run: cp -Rv blog /home/student/docu
       - name: copy docs
-        run: cp -RV docs /home/student/docu
+        run: cp -Rv docs /home/student/docu
       - name: copy img
-        run: cp -RV img /home/student/docu
+        run: cp -Rv img /home/student/docu
       - name: copy markdown
-        run: cp -RV markdown-page /home/student/docu
+        run: cp -Rv markdown-page /home/student/docu
       - name: copy 404
         run: cp 404.html /home/student/docu
       - name: copy README
