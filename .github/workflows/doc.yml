@@ -9,21 +9,23 @@ jobs:
         uses: actions/checkout@v4
       - name: Say Hello World
         run: echo Hello, world!
-      - name: copy 
+      - name: copy assets
         run: cp assets -Rv /home/student/docu
-      - name: copy 
-        run: cp blog /home/student/docu
-      - name: copy 
-        run: cp docs /home/student/docu
-      - name: copy 
-        run: cp img /home/student/docu
-      - name: copy 
-        run: cp markdown-page /home/student/docu
-      - name: copy 
+      - name: copy blog
+        run: cp -Rv blog /home/student/docu
+      - name: copy docs
+        run: cp -RV docs /home/student/docu
+      - name: copy img
+        run: cp -RV img /home/student/docu
+      - name: copy markdown
+        run: cp -RV markdown-page /home/student/docu
+      - name: copy 404
         run: cp 404.html /home/student/docu
-      - name: copy 
+      - name: copy README
         run: cp README.md /home/student/docu
-      - name: copy 
+      - name: copy index
         run: cp index.html /home/student/docu
-      - name: copy 
-        run: cp sitemaps.xml /home/student/docu
+      - name: copy sitemap
+        run: cp sitemap.xml /home/student/doc
+      - name: affiche reussi
+        run: echo "reussis !"
