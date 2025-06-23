@@ -2,7 +2,7 @@
 
 # Website
 
-Ce site web est construit en utilisant [Docusaurus 2](https://docusaurus.io/), un generateur de site web statique moderne.
+Ce site web est construit en utilisant [Docusaurus 2](https://docusaurus.io/fr/), un generateur de site web statique moderne.
 
 ### Installation
 
