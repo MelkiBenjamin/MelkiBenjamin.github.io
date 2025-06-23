@@ -24,8 +24,6 @@ Cette commande demare un server de developpement local et ouvvre une fenetre du 
 $ yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
 Cette commande génère du contenu statique dans le répertoire `build` et peut être servi à l’aide de n’importe quel service d’hébergement de contenu statique.
 
 ### Déploiement
